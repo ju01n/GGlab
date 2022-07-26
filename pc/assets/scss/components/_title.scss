@@ -1,0 +1,39 @@
+.sc-title{
+    text-align: center;
+    font-size: 42px;
+    font-family: $font-en;
+    line-height: 1;
+    font-weight: 500;
+    
+
+    .sc-intro & {
+        margin: 85px 0 65px;
+    }
+
+    .sc-recommend & {
+        margin: 50px 0;
+    }
+
+
+}
+
+.title{
+    font-size: 22px;
+    font-weight: bold;
+    
+    .sc-event & {
+        margin-top: 15px;
+    }
+
+    .group-row & {
+        font-weight: normal;
+        border-bottom: 3px solid #dddddd;
+    }
+
+    .footer & {
+        font-size: 24px;
+        font-weight: normal;
+        font-family: $font-en;
+    }
+}
+

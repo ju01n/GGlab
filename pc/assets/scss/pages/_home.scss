@@ -1,0 +1,135 @@
+.sc-visual{position: relative;
+    .link-slide{
+        img{
+            width: 100%;
+        }
+    }
+    .btn-nav{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 23px;
+        height: 40px;
+        &.prev{background: url(../images/ic-btn-nav-prev.png) no-repeat center; left: 243px;}
+        &.next{background: url(../images/ic-btn-nav-next.png) no-repeat center; right: 243px;}
+    }
+
+    .pagination{
+        position: absolute;
+        left: 50%;
+        bottom: 33px;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 11px;
+        .bullet{
+            width: 12px;
+            height: 13px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-sizing: border-box;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+}
+
+.sc-intro{
+    .group-content{
+        .wrap{
+            display: flex;
+            justify-content: space-between;
+            &.reverse{
+                flex-direction: row-reverse;
+            }
+
+            .info-box{
+                width: 510px;
+                .desc{
+                    margin: 42px 0 45px;
+
+                }
+            }
+        }
+    }
+}
+
+.sc-recommend{
+    .group-content{
+        padding: 93px 0;
+
+        &.bg-monitor{background: url(http://gglab.co.kr/image/banner/main_mid_bnr_bg_01.png) center / cover;}
+        &.bg-tv{background: url(http://gglab.co.kr/image/banner/main_mid_bnr_bg_02.png) center / cover;}
+        &.bg-air{background: url(http://gglab.co.kr/image/banner/main_mid_bnr_bg_03.png) center / cover;}
+
+        .info-box{
+            width: 370px;
+            height: 330px;
+            background: rgba(0,0,0,0.5);
+            color:#fff;
+            letter-spacing: -0.28px;
+            padding: 22px 20px 20px;
+            position: relative;
+        }
+    }
+}
+
+.sc-event{
+    margin-top: 100px;
+    .event-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .event-item{
+            width: 500px;
+        
+        .info-box{
+            margin-top: 25px;
+            .term{
+                line-height: 28px;
+            }
+            .title{
+                @include elip;
+            }
+            .desc{
+                @include elip-multi(2,28px);
+                line-height: 28px;
+              
+                
+            }
+        }
+        .link-detail{
+            margin-bottom: 50px;
+        }
+    }
+    }
+}
+
+.sc-review{
+    .wrap{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .info-box{
+            width: 520px;
+            text-align: justify;
+            .link-detail{
+                position: absolute;
+                bottom: 25px;
+            }
+
+    }
+    }
+}
+
+.group-row{
+    display: flex;
+    justify-content: space-between;
+    .sc-board{
+        width: 510px;
+        .board-list{
+            .board-item{
+            }
+        }
+    }
+}

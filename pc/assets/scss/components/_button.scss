@@ -1,0 +1,17 @@
+.link-detail{
+    width: 190px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #222;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    line-height: 46px;
+
+    .sc-recommend & {
+        position: absolute;
+        border-color:#fff;
+        bottom: 31px;}
+
+
+}
