@@ -80,7 +80,6 @@ address, caption, cite, code, dfn, em, var {
 
 img {
   display: block;
-  vertical-align: top;
 }
 
 body {
@@ -232,12 +231,17 @@ body {
   box-sizing: border-box;
   line-height: 30px;
 }
+.footer .inner .group-cs .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
 .footer .inner .group-cs .desc {
   display: inline-block;
   margin-bottom: 24px;
 }
 .footer .inner .group-cs .tel {
   font-size: 36px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .link-detail {
@@ -290,11 +294,6 @@ body {
 .sc-review .title {
   line-height: 28px;
 }
-.footer .title {
-  font-size: 24px;
-  font-weight: normal;
-  font-family: "Montserrat", sans-serif;
-}
 
 .desc {
   font-size: 18px;
@@ -317,29 +316,29 @@ body {
 }
 .sc-visual .btn-nav.prev {
   background: url(../images/ic-btn-nav-prev.png) no-repeat center;
-  left: 237px;
+  left: 244px;
 }
 .sc-visual .btn-nav.next {
   background: url(../images/ic-btn-nav-next.png) no-repeat center;
-  right: 237px;
+  right: 244px;
 }
 .sc-visual .pagination {
-  position: absolute;
-  left: 50%;
-  bottom: 33px;
-  transform: translateX(-50%);
   display: flex;
   gap: 11px;
+  position: absolute;
+  top: 393px;
+  left: 50%;
 }
 .sc-visual .pagination .bullet {
   width: 12px;
   height: 13px;
-  border-radius: 50%;
   border: 2px solid #fff;
+  border-radius: 50%;
   box-sizing: border-box;
+  transform: translateX(-50%);
 }
 .sc-visual .pagination .bullet.active {
-  background: #fff;
+  background-color: #fff;
 }
 
 .sc-intro .group-content .wrap {
@@ -424,7 +423,6 @@ body {
 .sc-review .wrap {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 .sc-review .info-box {
   line-height: 22px;
@@ -436,9 +434,16 @@ body {
   line-height: 32px;
   margin-top: 9px;
   text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 32px;
+  max-height: 96px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
 }
 .sc-review .info-box .link-detail {
-  margin-top: 26px;
+  margin-top: 33px;
 }
 
 .btn-nav {
@@ -449,7 +454,7 @@ body {
   height: 40px;
 }
 .btn-nav.prev {
-  background: url(../images/ic-review-btn-prev.) no-repeat center;
+  background: url(../images/ic-review-btn-prev.jpg) no-repeat center;
   left: -50px;
 }
 .btn-nav.next {
@@ -491,14 +496,14 @@ body {
   line-height: 60px;
   border-bottom: 1px solid #dddddd;
   padding-left: 9px;
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .group-row .sc-board .board-list .board-item a {
   display: block;
   height: 100%;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .group-row .sc-board .board-list .board-item a .date {
   color: #888888;

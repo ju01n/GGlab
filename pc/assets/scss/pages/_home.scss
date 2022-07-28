@@ -10,25 +10,24 @@
         transform: translateY(-50%);
         width: 23px;
         height: 40px;
-        &.prev{background: url(../images/ic-btn-nav-prev.png) no-repeat center; left: 237px;}
-        &.next{background: url(../images/ic-btn-nav-next.png) no-repeat center; right: 237px;}
+        &.prev{background: url(../images/ic-btn-nav-prev.png) no-repeat center; left: 244px;}
+        &.next{background: url(../images/ic-btn-nav-next.png) no-repeat center; right: 244px;}
     }
-
     .pagination{
-        position: absolute;
-        left: 50%;
-        bottom: 33px;
-        transform: translateX(-50%);
         display: flex;
         gap: 11px;
+        position: absolute;
+        top: 393px;
+        left: 50%;
         .bullet{
             width: 12px;
             height: 13px;
-            border-radius: 50%;
             border: 2px solid #fff;
+            border-radius: 50%;
             box-sizing: border-box;
+            transform: translateX(-50%);
             &.active{
-                background: #fff;
+                background-color: #fff;
             }
         }
     }
@@ -113,7 +112,6 @@
     .wrap{
         display: flex;
         justify-content: space-between;
-        position: relative;
         }
         .info-box{
             line-height: 22px;
@@ -124,9 +122,10 @@
                 line-height: 32px;
                 margin-top: 9px;
                 text-align: left;
+                @include elip-multi(3,32px)
             }
             .link-detail{
-                margin-top: 26px;
+                margin-top: 33px;
             }
         }
     }
@@ -136,7 +135,7 @@
         transform: translateY(-50%);
         width: 23px;
         height: 40px;
-        &.prev{background: url(../images/ic-review-btn-prev.) no-repeat center; left: -50px;}
+        &.prev{background: url(../images/ic-review-btn-prev.jpg) no-repeat center; left: -50px;}
         &.next{background: url(../images/ic-review-btn-next.png) no-repeat center; right: -50px;}
 
     }
@@ -175,10 +174,10 @@
                 line-height: 60px;
                 border-bottom: 1px solid #dddddd;
                 padding-left: 9px;
-                @include elip;
                 a{
                     display: block;
                     height: 100%;
+                    @include elip;
                     .date{
                         color:#888888;
                         margin-right: 25px;

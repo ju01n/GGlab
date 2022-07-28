@@ -41,12 +41,17 @@
             padding: 23px 22px 23px;
             box-sizing: border-box;
             line-height: 30px;
+            .title{
+                font-family: $font-en;
+                font-weight: normal;
+            }
             .desc{
                 display: inline-block;
                 margin-bottom: 24px;
             }
             .tel{
                 font-size: 36px;
+                font-family: $font-en;
             }
         }
     }
