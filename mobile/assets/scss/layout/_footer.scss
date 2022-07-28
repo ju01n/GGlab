@@ -1,0 +1,76 @@
+.footer{
+    margin-top: 60px;
+    .sns-area{
+        height: 80px;
+        line-height: 80px;
+        padding: 0 35px;
+        background:#d71609;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .link-sns{
+            width: 35px;
+            height: 35px;
+            &.ic-facebook{background: url(../images/ic-facebook.png) no-repeat center/contain;}
+            &.ic-blog{background: url(../images/ic-blog.png) no-repeat center/contain;}
+            &.ic-instagram{background: url(../images/ic-insta.png) no-repeat center/contain;}
+            &.ic-youtube{background: url(../images/ic-youtube.png) no-repeat center/contain;}
+            }
+        }
+        .inner{
+            background: #aaaaaa;
+            height: 390px;
+            padding-top: 35px;
+
+            .group-cs{
+                width: 200px;
+                height: 100px;
+                border: 2px solid #d5d5d5;
+                box-sizing: border-box;
+                margin: 0 auto;
+                color: #fff;
+                text-align: center;
+                .title{
+                    font-family: $font-en;
+                    font-weight: normal;
+                    padding-top: 12px;
+                }
+                .desc{
+                    display: block;
+                    font-size: 12px;
+                    margin-top: 8px;
+                }
+                .tel{
+                    display: block;
+                    font-family: $font-en;
+                    font-size: 20px;
+                    margin-top: 12px;
+                }
+            }
+
+            .group-info{
+                margin-top: 42px;
+                color:#fff;
+                font-size: 12px;
+                line-height: 18px;
+                .logo{
+                    background: url(../images/m-logo.png) no-repeat center/contain;
+                    width: 135px;
+                    height: 17px;
+                    margin-bottom: 18px;
+                }
+                .addr-area{
+                    .bar{
+                        display: inline-block;
+                        height: 10px;
+                        width: 1px;
+                        background: #fff;
+                        margin: 0 7px;
+                    }
+                    .copy{
+                        margin-top: 18px;
+                }
+            }
+        }
+    }
+}
