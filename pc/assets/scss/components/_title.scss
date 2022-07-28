@@ -7,11 +7,15 @@
     
 
     .sc-intro & {
-        margin: 85px 0 65px;
+        margin: 105px 0 65px;
     }
 
     .sc-recommend & {
-        margin: 50px 0;
+        margin: 106px 0 60px 0;
+    }
+
+    .sc-review & {
+        margin: 29px 0 64px 0;
     }
 
 
@@ -22,12 +26,19 @@
     font-weight: bold;
     
     .sc-event & {
-        margin-top: 15px;
+        margin: 16px 0 12px 0;
+        line-height: 1;
     }
 
     .group-row & {
         font-weight: normal;
         border-bottom: 3px solid #dddddd;
+        padding: 0 0 11px 9px;
+        line-height: 40px;
+    }
+    .sc-review & {
+        line-height: 28px;
+
     }
 
     .footer & {

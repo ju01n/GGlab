@@ -10,8 +10,8 @@
         transform: translateY(-50%);
         width: 23px;
         height: 40px;
-        &.prev{background: url(../images/ic-btn-nav-prev.png) no-repeat center; left: 243px;}
-        &.next{background: url(../images/ic-btn-nav-next.png) no-repeat center; right: 243px;}
+        &.prev{background: url(../images/ic-btn-nav-prev.png) no-repeat center; left: 237px;}
+        &.next{background: url(../images/ic-btn-nav-next.png) no-repeat center; right: 237px;}
     }
 
     .pagination{
@@ -45,19 +45,19 @@
 
             .info-box{
                 width: 510px;
+                }
                 .desc{
-                    margin: 42px 0 45px;
-
+                    margin: 67px 0 45px;
+                    }
                 }
             }
         }
-    }
-}
+
+
 
 .sc-recommend{
     .group-content{
-        padding: 93px 0;
-
+        padding: 91px 0;
         &.bg-monitor{background: url(http://gglab.co.kr/image/banner/main_mid_bnr_bg_01.png) center / cover;}
         &.bg-tv{background: url(http://gglab.co.kr/image/banner/main_mid_bnr_bg_02.png) center / cover;}
         &.bg-air{background: url(http://gglab.co.kr/image/banner/main_mid_bnr_bg_03.png) center / cover;}
@@ -67,12 +67,16 @@
             height: 330px;
             background: rgba(0,0,0,0.5);
             color:#fff;
-            letter-spacing: -0.28px;
-            padding: 22px 20px 20px;
+            padding: 25px 19px 31px 19px;
             position: relative;
+            box-sizing: border-box;
+            }
+            .title{
+                line-height: 1;
+                margin-bottom: 16px;
+            }
         }
     }
-}
 
 .sc-event{
     margin-top: 100px;
@@ -84,52 +88,114 @@
             width: 500px;
         
         .info-box{
-            margin-top: 25px;
+            margin-top: 23px;
             .term{
                 line-height: 28px;
             }
             .title{
                 @include elip;
+                
             }
             .desc{
                 @include elip-multi(2,28px);
-                line-height: 28px;
-              
                 
             }
         }
         .link-detail{
-            margin-bottom: 50px;
+            margin:25px 0 50px 0;
         }
     }
     }
 }
 
 .sc-review{
+    position: relative;
     .wrap{
         display: flex;
         justify-content: space-between;
         position: relative;
+        }
         .info-box{
+            line-height: 22px;
+            padding-top: 20px;
             width: 520px;
-            text-align: justify;
-            .link-detail{
-                position: absolute;
-                bottom: 25px;
+            text-align: normal;
+            .desc{
+                line-height: 32px;
+                margin-top: 9px;
+                text-align: left;
             }
+            .link-detail{
+                margin-top: 26px;
+            }
+        }
+    }
+    .btn-nav{
+        position: absolute;
+        top: 260px;
+        transform: translateY(-50%);
+        width: 23px;
+        height: 40px;
+        &.prev{background: url(../images/ic-review-btn-prev.) no-repeat center; left: -50px;}
+        &.next{background: url(../images/ic-review-btn-next.png) no-repeat center; right: -50px;}
 
     }
+    .pagination{
+        position: absolute;
+        left: 50%;
+        top: 490px;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 11px;
+        .bullet{
+            width: 12px;
+            height: 13px;
+            border: 2px solid #dddddd;
+            border-radius: 50%;
+            box-sizing: border-box;
+            &.active{
+                background-color: #ddd;
+            }
+        }
     }
-}
+
+
 
 .group-row{
+    margin: 119px 0 120px 0;
     display: flex;
     justify-content: space-between;
     .sc-board{
         width: 510px;
+        position: relative;
         .board-list{
             .board-item{
+                font-size: 16px;
+                color:#222222;
+                line-height: 60px;
+                border-bottom: 1px solid #dddddd;
+                padding-left: 9px;
+                @include elip;
+                a{
+                    display: block;
+                    height: 100%;
+                    .date{
+                        color:#888888;
+                        margin-right: 25px;
+                    }
+                }
             }
+        }
+        .link-more{
+            width: 30px;
+            height: 30px;
+            border: 2px solid #eeeeee;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            background: url(../images/ic-more.png) no-repeat center;
+
         }
     }
 }

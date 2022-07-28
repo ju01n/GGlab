@@ -59,7 +59,7 @@ input[type=search]::-webkit-search-cancel-button {
 
 body, button, input, select, td, textarea, th {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1;
   font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
   font-weight: 400;
   color: inherit;
@@ -165,7 +165,8 @@ body {
 .header .group-flex .sns-area .link-sns.ic-youtube {
   background: url(../images/ic-youtube.png) no-repeat center;
 }
-.header .group-flex .search-area {
+.header .group-flex .search-area .link-search {
+  display: block;
   width: 31px;
   height: 31px;
   border: 2px solid #ddd;
@@ -212,12 +213,31 @@ body {
   line-height: 30px;
   font-size: 16px;
 }
+.footer .inner .group-info .addr-area .bar {
+  display: inline-block;
+  height: 14px;
+  width: 2px;
+  background: #fff;
+  margin: 0 10px 0 7px;
+}
+.footer .inner .group-info .addr-area .copy {
+  margin-top: 18px;
+}
 .footer .inner .group-cs {
   width: 300px;
   height: 165px;
   border: 2px solid #fff;
   margin-top: 48px;
-  padding: 23px 22px 0 22px;
+  padding: 23px 22px 23px;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+.footer .inner .group-cs .desc {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.footer .inner .group-cs .tel {
+  font-size: 36px;
 }
 
 .link-detail {
@@ -233,7 +253,7 @@ body {
 .sc-recommend .link-detail {
   position: absolute;
   border-color: #fff;
-  bottom: 31px;
+  bottom: 29px;
 }
 
 .sc-title {
@@ -244,10 +264,13 @@ body {
   font-weight: 500;
 }
 .sc-intro .sc-title {
-  margin: 85px 0 65px;
+  margin: 105px 0 65px;
 }
 .sc-recommend .sc-title {
-  margin: 50px 0;
+  margin: 106px 0 60px 0;
+}
+.sc-review .sc-title {
+  margin: 29px 0 64px 0;
 }
 
 .title {
@@ -255,11 +278,17 @@ body {
   font-weight: bold;
 }
 .sc-event .title {
-  margin-top: 15px;
+  margin: 16px 0 12px 0;
+  line-height: 1;
 }
 .group-row .title {
   font-weight: normal;
   border-bottom: 3px solid #dddddd;
+  padding: 0 0 11px 9px;
+  line-height: 40px;
+}
+.sc-review .title {
+  line-height: 28px;
 }
 .footer .title {
   font-size: 24px;
@@ -271,13 +300,6 @@ body {
   font-size: 18px;
   line-height: 28px;
   text-align: justify;
-}
-.bar {
-  content: "";
-  height: 14px;
-  width: 2px;
-  background-color: #fff;
-  margin: 0 10px 0 10px;
 }
 
 .sc-visual {
@@ -295,11 +317,11 @@ body {
 }
 .sc-visual .btn-nav.prev {
   background: url(../images/ic-btn-nav-prev.png) no-repeat center;
-  left: 243px;
+  left: 237px;
 }
 .sc-visual .btn-nav.next {
   background: url(../images/ic-btn-nav-next.png) no-repeat center;
-  right: 243px;
+  right: 237px;
 }
 .sc-visual .pagination {
   position: absolute;
@@ -330,12 +352,12 @@ body {
 .sc-intro .group-content .wrap .info-box {
   width: 510px;
 }
-.sc-intro .group-content .wrap .info-box .desc {
-  margin: 42px 0 45px;
+.sc-intro .group-content .wrap .desc {
+  margin: 67px 0 45px;
 }
 
 .sc-recommend .group-content {
-  padding: 93px 0;
+  padding: 91px 0;
 }
 .sc-recommend .group-content.bg-monitor {
   background: url(http://gglab.co.kr/image/banner/main_mid_bnr_bg_01.png) center/cover;
@@ -351,9 +373,13 @@ body {
   height: 330px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  letter-spacing: -0.28px;
-  padding: 22px 20px 20px;
+  padding: 25px 19px 31px 19px;
   position: relative;
+  box-sizing: border-box;
+}
+.sc-recommend .group-content .title {
+  line-height: 1;
+  margin-bottom: 16px;
 }
 
 .sc-event {
@@ -368,7 +394,7 @@ body {
   width: 500px;
 }
 .sc-event .event-list .event-item .info-box {
-  margin-top: 25px;
+  margin-top: 23px;
 }
 .sc-event .event-list .event-item .info-box .term {
   line-height: 28px;
@@ -387,30 +413,104 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   display: -webkit-box;
-  line-height: 28px;
 }
 .sc-event .event-list .event-item .link-detail {
-  margin-bottom: 50px;
+  margin: 25px 0 50px 0;
 }
 
+.sc-review {
+  position: relative;
+}
 .sc-review .wrap {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-.sc-review .wrap .info-box {
+.sc-review .info-box {
+  line-height: 22px;
+  padding-top: 20px;
   width: 520px;
-  text-align: justify;
+  text-align: normal;
 }
-.sc-review .wrap .info-box .link-detail {
+.sc-review .info-box .desc {
+  line-height: 32px;
+  margin-top: 9px;
+  text-align: left;
+}
+.sc-review .info-box .link-detail {
+  margin-top: 26px;
+}
+
+.btn-nav {
   position: absolute;
-  bottom: 25px;
+  top: 260px;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 40px;
+}
+.btn-nav.prev {
+  background: url(../images/ic-review-btn-prev.) no-repeat center;
+  left: -50px;
+}
+.btn-nav.next {
+  background: url(../images/ic-review-btn-next.png) no-repeat center;
+  right: -50px;
+}
+
+.pagination {
+  position: absolute;
+  left: 50%;
+  top: 490px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 11px;
+}
+.pagination .bullet {
+  width: 12px;
+  height: 13px;
+  border: 2px solid #dddddd;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.pagination .bullet.active {
+  background-color: #ddd;
 }
 
 .group-row {
+  margin: 119px 0 120px 0;
   display: flex;
   justify-content: space-between;
 }
 .group-row .sc-board {
   width: 510px;
+  position: relative;
+}
+.group-row .sc-board .board-list .board-item {
+  font-size: 16px;
+  color: #222222;
+  line-height: 60px;
+  border-bottom: 1px solid #dddddd;
+  padding-left: 9px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.group-row .sc-board .board-list .board-item a {
+  display: block;
+  height: 100%;
+}
+.group-row .sc-board .board-list .board-item a .date {
+  color: #888888;
+  margin-right: 25px;
+}
+.group-row .sc-board .link-more {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #eeeeee;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  background: url(../images/ic-more.png) no-repeat center;
 }

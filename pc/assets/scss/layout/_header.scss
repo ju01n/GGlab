@@ -52,11 +52,13 @@
             }}
             
             .search-area{
-                width: 31px;
-                height: 31px;
-                border: 2px solid #ddd;
-                background: url(../images/ic-search.png) no-repeat center;
+                
                 .link-search{
+                    display: block;
+                    width: 31px;
+                    height: 31px;
+                    border: 2px solid #ddd;
+                    background: url(../images/ic-search.png) no-repeat center;
                 }
             }
         }
