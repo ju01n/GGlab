@@ -1,5 +1,4 @@
 body{
-    color:#222;
     font-size: 13px;
     letter-spacing: -0.025em;
     font-family: $font-kr;
@@ -9,6 +8,7 @@ body{
 .wrapper{
     width: 100%;
     margin: 0 auto;
+    color:#222;
 }
 
 .inner{
