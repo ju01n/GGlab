@@ -318,11 +318,11 @@ body {
 }
 .sc-visual .btn-nav.prev {
   background: url(../images/ic-btn-nav-prev.png) no-repeat center;
-  left: 36px;
+  left: 45px;
 }
 .sc-visual .btn-nav.next {
   background: url(../images/ic-btn-nav-next.png) no-repeat center;
-  right: 36px;
+  right: 45px;
 }
 .sc-visual .pagination {
   display: flex;
@@ -332,7 +332,7 @@ body {
   bottom: 33px;
 }
 .sc-visual .pagination .bullet {
-  width: 12px;
+  width: 13px;
   height: 13px;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -420,17 +420,19 @@ body {
   margin: 25px 0 50px 0;
 }
 
-.sc-review .wrap {
+.sc-review {
   position: relative;
+}
+.sc-review .wrap {
   display: flex;
   justify-content: space-between;
 }
-.sc-review .info-box {
+.sc-review .wrap .info-box {
   line-height: 32px;
   padding-top: 20px;
   width: 520px;
 }
-.sc-review .info-box .desc {
+.sc-review .wrap .info-box .desc {
   margin-top: 9px;
   text-align: justify;
   text-overflow: ellipsis;
@@ -441,28 +443,25 @@ body {
   -webkit-line-clamp: 3;
   display: -webkit-box;
 }
-.sc-review .info-box .link-detail {
+.sc-review .wrap .info-box .link-detail {
   margin-top: 26px;
 }
-
-.btn-nav {
+.sc-review .btn-nav {
   position: absolute;
-  top: 50%;
+  top: 280px;
   transform: translateY(-50%);
   width: 23px;
   height: 40px;
-  top: 50%;
 }
-.btn-nav.prev {
+.sc-review .btn-nav.prev {
   background: url(../images/ic-review-btn-prev.jpg) no-repeat center;
-  left: -50px;
+  left: -72px;
 }
-.btn-nav.next {
+.sc-review .btn-nav.next {
   background: url(../images/ic-review-btn-next.png) no-repeat center;
-  right: -50px;
+  right: -72px;
 }
-
-.pagination {
+.sc-review .pagination {
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
@@ -470,14 +469,14 @@ body {
   left: 50%;
   margin-top: 34px;
 }
-.pagination .bullet {
+.sc-review .pagination .bullet {
   width: 13px;
   height: 13px;
   border: 2px solid #dddddd;
   border-radius: 50%;
   box-sizing: border-box;
 }
-.pagination .bullet.active {
+.sc-review .pagination .bullet.active {
   background-color: #ddd;
 }
 

@@ -11,8 +11,8 @@
         transform: translateY(-50%);
         width: 23px;
         height: 40px;
-        &.prev{background: url(../images/ic-btn-nav-prev.png) no-repeat center; left: 36px;}
-        &.next{background: url(../images/ic-btn-nav-next.png) no-repeat center; right: 36px;}
+        &.prev{background: url(../images/ic-btn-nav-prev.png) no-repeat center; left: 45px;}
+        &.next{background: url(../images/ic-btn-nav-next.png) no-repeat center; right: 45px;}
     }
     .pagination{
         display: flex;
@@ -21,7 +21,7 @@
         left: 50%;
         bottom: 33px;
         .bullet{
-            width: 12px;
+            width: 13px;
             height: 13px;
             border: 2px solid #fff;
             border-radius: 50%;
@@ -110,11 +110,10 @@
 }
 
 .sc-review{
+    position: relative;
     .wrap{
-        position: relative;
         display: flex;
         justify-content: space-between;
-        }
         .info-box{
             line-height: 32px;
             padding-top: 20px;
@@ -123,7 +122,6 @@
                 margin-top: 9px;
                 text-align: justify;
                 @include elip-multi(3,32px)
-
             }
             .link-detail{
                 margin-top: 26px;
@@ -132,15 +130,14 @@
     }
     .btn-nav{
         position: absolute;
-        top: 50%;
+        top: 280px;
         transform: translateY(-50%);
         width: 23px;
         height: 40px;
-        top: 50%;
-        &.prev{background: url(../images/ic-review-btn-prev.jpg) no-repeat center; left: -50px;}
-        &.next{background: url(../images/ic-review-btn-next.png) no-repeat center; right: -50px;}
-
+        &.prev{background: url(../images/ic-review-btn-prev.jpg) no-repeat center; left: -72px;}
+        &.next{background: url(../images/ic-review-btn-next.png) no-repeat center; right: -72px;}
     }
+
     .pagination{
         transform: translateX(-50%);
         display: flex;
@@ -159,6 +156,7 @@
             }
         }
     }
+}
 
 
 
