@@ -225,7 +225,7 @@ body {
 .footer .inner .group-cs {
   width: 300px;
   height: 165px;
-  border: 2px solid #fff;
+  border: 2px solid rgba(213, 213, 213, 0.8352941176);
   margin-top: 48px;
   padding: 23px 22px 23px;
   box-sizing: border-box;
