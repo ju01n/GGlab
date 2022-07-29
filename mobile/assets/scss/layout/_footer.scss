@@ -1,16 +1,15 @@
 .footer{
-    margin-top: 60px;
+    padding-top: 30px;
     .sns-area{
         height: 80px;
-        line-height: 80px;
-        padding: 0 35px;
         background:#d71609;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         .link-sns{
             width: 35px;
             height: 35px;
+            margin-right: 25px;
             &.ic-facebook{background: url(../images/ic-facebook.png) no-repeat center/contain;}
             &.ic-blog{background: url(../images/ic-blog.png) no-repeat center/contain;}
             &.ic-instagram{background: url(../images/ic-insta.png) no-repeat center/contain;}
@@ -21,6 +20,7 @@
             background: #aaaaaa;
             height: 390px;
             padding-top: 35px;
+            box-sizing: border-box;
 
             .group-cs{
                 width: 200px;
@@ -44,7 +44,7 @@
                     display: block;
                     font-family: $font-en;
                     font-size: 20px;
-                    margin-top: 12px;
+                    margin-top: 15px;
                 }
             }
 
@@ -57,9 +57,10 @@
                     background: url(../images/m-logo.png) no-repeat center/contain;
                     width: 135px;
                     height: 17px;
-                    margin-bottom: 18px;
+                    margin-bottom: 20px;
                 }
                 .addr-area{
+                    line-height: 18px;
                     .bar{
                         display: inline-block;
                         height: 10px;
@@ -68,7 +69,7 @@
                         margin: 0 7px;
                     }
                     .copy{
-                        margin-top: 18px;
+                        margin-top: 17px;
                 }
             }
         }

@@ -16,8 +16,6 @@ body {
 .inner {
   width: 100%;
   margin: 0 auto;
-  padding: 0 9px;
-  box-sizing: border-box;
 }
 
 .blind {
@@ -89,7 +87,7 @@ input[type=search]::-webkit-search-cancel-button {
 body, button, input, select, td, textarea, th {
   font-size: 13px;
   line-height: 1;
-  font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+  font-family: "Noto Sans KR", sans-serif, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
   font-weight: 400;
   color: inherit;
 }
@@ -149,20 +147,19 @@ img {
 }
 
 .footer {
-  margin-top: 60px;
+  padding-top: 30px;
 }
 .footer .sns-area {
   height: 80px;
-  line-height: 80px;
-  padding: 0 35px;
   background: #d71609;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .footer .sns-area .link-sns {
   width: 35px;
   height: 35px;
+  margin-right: 25px;
 }
 .footer .sns-area .link-sns.ic-facebook {
   background: url(../images/ic-facebook.png) no-repeat center/contain;
@@ -180,6 +177,7 @@ img {
   background: #aaaaaa;
   height: 390px;
   padding-top: 35px;
+  box-sizing: border-box;
 }
 .footer .inner .group-cs {
   width: 200px;
@@ -204,7 +202,7 @@ img {
   display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 .footer .inner .group-info {
   margin-top: 42px;
@@ -216,7 +214,10 @@ img {
   background: url(../images/m-logo.png) no-repeat center/contain;
   width: 135px;
   height: 17px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+}
+.footer .inner .group-info .addr-area {
+  line-height: 18px;
 }
 .footer .inner .group-info .addr-area .bar {
   display: inline-block;
@@ -226,14 +227,14 @@ img {
   margin: 0 7px;
 }
 .footer .inner .group-info .addr-area .copy {
-  margin-top: 18px;
+  margin-top: 17px;
 }
 
 .link-detail {
   width: 125px;
   height: 40px;
   box-sizing: border-box;
-  border: 2px solid #222;
+  border: 1px solid #222;
   font-size: 12px;
   display: block;
   text-align: center;
@@ -255,8 +256,10 @@ img {
   margin: 38px 0 16px 0;
 }
 .sc-recommend .sc-title {
-  font-weight: bold;
   margin: 40px 0 19px 0;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
 }
 .sc-review .sc-title {
   margin: 39px 0 21px 0;
@@ -266,13 +269,17 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .sc-event .title {
   font-size: 15px;
 }
 .sc-review .title {
   font-size: 15px;
-  padding-bottom: 17px;
+}
+.sc-board .title {
+  padding-bottom: 15px;
+  font-weight: normal;
 }
 
 .sc-visual {
@@ -282,7 +289,7 @@ img {
   display: flex;
   gap: 9px;
   position: absolute;
-  bottom: 17px;
+  bottom: 18px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -296,6 +303,9 @@ img {
   background: #fff;
 }
 
+.sc-intro {
+  padding: 0 9px;
+}
 .sc-intro .group-content .info-box .desc {
   margin: 17px 0 22px 0;
   line-height: 20px;
@@ -303,8 +313,9 @@ img {
 }
 
 .sc-recommend .group-content {
+  width: 100%;
   height: 290px;
-  padding-top: 44px;
+  padding: 44px 20px;
   box-sizing: border-box;
 }
 .sc-recommend .group-content.monitor {
@@ -317,9 +328,9 @@ img {
   background: url(../images/m-sc-reco3.jpg) center/cover;
 }
 .sc-recommend .group-content .inner {
-  padding: 44px 20px;
+  padding: 19px 15px 49px 15px;
   box-sizing: border-box;
-  width: 290px;
+  width: 280px;
   height: 201px;
   background-color: rgba(34, 34, 34, 0.7);
 }
@@ -327,30 +338,35 @@ img {
   color: #fff;
 }
 .sc-recommend .group-content .inner .info-box .desc {
-  margin-top: 11px;
+  margin-top: 12px;
   line-height: 20px;
   text-align: justify;
 }
 
-.sc-event .img-box {
-  margin-top: 40px;
+.sc-event {
+  padding: 0 35px;
 }
-.sc-event .info-box .term {
+.sc-event .event-item {
+  margin-top: 41px;
+}
+.sc-event .event-item .info-box .term {
   font-size: 12px;
   display: block;
   color: #858585;
-  margin-top: 13px;
+  margin: 15px 0 13px 0;
   line-height: 20px;
 }
-.sc-event .info-box .desc {
-  margin: 10px 0 22px 0;
-  line-height: 14px;
+.sc-event .event-item .info-box .desc {
+  margin: 11px 0 22px 0;
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
+.sc-review {
+  padding: 0 30px;
+}
 .sc-review .wrap .info-box {
   margin-top: 14px;
 }
@@ -369,7 +385,7 @@ img {
   display: flex;
   gap: 9px;
   justify-content: center;
-  margin: 33px 0 56px 0;
+  margin: 33px 0 51px 0;
 }
 .sc-review .wrap .pagination .bullet {
   width: 10px;
@@ -383,18 +399,12 @@ img {
 }
 
 .sc-board {
+  padding: 0 20px;
   position: relative;
+  margin-bottom: 30px;
 }
 .sc-board .title {
-  margin-top: 36px;
-  padding-bottom: 17px;
   border-bottom: 2px solid #ddd;
-}
-.sc-board .board-list {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .sc-board .board-list .board-item a {
   font-size: 12px;
@@ -402,6 +412,10 @@ img {
   border-bottom: 1px solid #ddd;
   display: block;
   height: 100%;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .sc-board .board-list .board-item a .date {
   margin-right: 20px;
@@ -413,6 +427,6 @@ img {
   background: url(../images/ic-more.png) no-repeat center;
   background-size: 100%;
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 0;
 }

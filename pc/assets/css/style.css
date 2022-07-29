@@ -60,7 +60,7 @@ input[type=search]::-webkit-search-cancel-button {
 body, button, input, select, td, textarea, th {
   font-size: 14px;
   line-height: 1;
-  font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+  font-family: "Noto Sans KR", sans-serif, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
   font-weight: 400;
   color: inherit;
 }
@@ -237,7 +237,8 @@ body {
 }
 .footer .inner .group-cs .desc {
   display: inline-block;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  line-height: 30px;
 }
 .footer .inner .group-cs .tel {
   font-size: 36px;
@@ -268,10 +269,11 @@ body {
   font-weight: 500;
 }
 .sc-intro .sc-title {
-  margin: 105px 0 65px;
+  margin: 85px 0 65px;
 }
 .sc-recommend .sc-title {
   margin: 106px 0 60px 0;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .sc-review .sc-title {
   margin: 29px 0 64px 0;
@@ -316,18 +318,18 @@ body {
 }
 .sc-visual .btn-nav.prev {
   background: url(../images/ic-btn-nav-prev.png) no-repeat center;
-  left: 244px;
+  left: 36px;
 }
 .sc-visual .btn-nav.next {
   background: url(../images/ic-btn-nav-next.png) no-repeat center;
-  right: 244px;
+  right: 36px;
 }
 .sc-visual .pagination {
   display: flex;
   gap: 11px;
   position: absolute;
-  top: 393px;
   left: 50%;
+  bottom: 33px;
 }
 .sc-visual .pagination .bullet {
   width: 12px;
@@ -352,7 +354,7 @@ body {
   width: 510px;
 }
 .sc-intro .group-content .wrap .desc {
-  margin: 67px 0 45px;
+  margin: 41px 0 45px 0;
 }
 
 .sc-recommend .group-content {
@@ -397,6 +399,7 @@ body {
 }
 .sc-event .event-list .event-item .info-box .term {
   line-height: 28px;
+  color: rgba(133, 133, 133, 0.5215686275);
 }
 .sc-event .event-list .event-item .info-box .title {
   display: block;
@@ -417,23 +420,19 @@ body {
   margin: 25px 0 50px 0;
 }
 
-.sc-review {
-  position: relative;
-}
 .sc-review .wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 .sc-review .info-box {
-  line-height: 22px;
+  line-height: 32px;
   padding-top: 20px;
   width: 520px;
-  text-align: normal;
 }
 .sc-review .info-box .desc {
-  line-height: 32px;
   margin-top: 9px;
-  text-align: left;
+  text-align: justify;
   text-overflow: ellipsis;
   overflow: hidden;
   line-height: 32px;
@@ -443,15 +442,16 @@ body {
   display: -webkit-box;
 }
 .sc-review .info-box .link-detail {
-  margin-top: 33px;
+  margin-top: 26px;
 }
 
 .btn-nav {
   position: absolute;
-  top: 260px;
+  top: 50%;
   transform: translateY(-50%);
   width: 23px;
   height: 40px;
+  top: 50%;
 }
 .btn-nav.prev {
   background: url(../images/ic-review-btn-prev.jpg) no-repeat center;
@@ -463,15 +463,15 @@ body {
 }
 
 .pagination {
-  position: absolute;
-  left: 50%;
-  top: 490px;
   transform: translateX(-50%);
   display: flex;
-  gap: 11px;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  margin-top: 34px;
 }
 .pagination .bullet {
-  width: 12px;
+  width: 13px;
   height: 13px;
   border: 2px solid #dddddd;
   border-radius: 50%;
@@ -482,7 +482,7 @@ body {
 }
 
 .group-row {
-  margin: 119px 0 120px 0;
+  margin: 121px 0 120px 0;
   display: flex;
   justify-content: space-between;
 }

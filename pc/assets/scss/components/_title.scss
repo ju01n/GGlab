@@ -4,14 +4,14 @@
     font-family: $font-en;
     line-height: 1;
     font-weight: 500;
-    
 
     .sc-intro & {
-        margin: 105px 0 65px;
+        margin: 85px 0 65px;
     }
 
     .sc-recommend & {
         margin: 106px 0 60px 0;
+        font-family: $font-kr;
     }
 
     .sc-review & {
@@ -38,7 +38,6 @@
     }
     .sc-review & {
         line-height: 28px;
-
     }
 
     }

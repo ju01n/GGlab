@@ -1,15 +1,19 @@
 .sc-title{
     text-align: center;
     font-size: 20px;
-    font-family:$font-en;
+    font-family: $font-en;
 
     .sc-intro & {
         margin: 38px 0 16px 0;
+        
     }
 
     .sc-recommend & {
-        font-weight: bold;
         margin: 40px 0 19px 0;
+        font-size: 20px;
+        font-family: $font-kr;
+        font-weight: bold;
+
     }
 
     .sc-review & {
@@ -21,6 +25,7 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
+    font-family: $font-kr;
 
     .sc-event & {
         font-size: 15px;
@@ -28,7 +33,10 @@
     
     .sc-review & {
         font-size: 15px;
-        padding-bottom: 17px;
+    }
+    .sc-board & {
+        padding-bottom: 15px;
+        font-weight: normal;
     }
 
 }
