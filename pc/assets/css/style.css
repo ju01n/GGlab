@@ -312,17 +312,18 @@ body {
 .sc-visual .btn-nav {
   position: absolute;
   top: 50%;
+  left: 50%;
   transform: translateY(-50%);
   width: 23px;
   height: 40px;
 }
 .sc-visual .btn-nav.prev {
   background: url(../images/ic-btn-nav-prev.png) no-repeat center;
-  left: 45px;
+  margin-left: -623px;
 }
 .sc-visual .btn-nav.next {
   background: url(../images/ic-btn-nav-next.png) no-repeat center;
-  right: 45px;
+  margin-left: 600px;
 }
 .sc-visual .pagination {
   display: flex;

@@ -331,7 +331,7 @@ img {
   height: 200px;
   padding: 19px 15px 49px 15px;
   box-sizing: border-box;
-  background-color: rgba(34, 34, 34, 0.7);
+  background-color: rgba(34, 34, 34, 0.5);
   box-sizing: border-box;
 }
 .sc-recommend .group-content .inner .info-box {
